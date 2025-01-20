@@ -1,22 +1,15 @@
 function Logo() {
   return (
-    <a href="/" className="flex items-center gap-2 z-10">
-      <img
-        src="/icon.png"
-        height="60"
-        width="60"
-        alt="The Wild Oasis logo"
-        className="transform rotate-3" // Slight tilt
-      />
-      <span className="text-xl font-semibold text-primary-100">
-        PeUnique
-      </span>
-      <img
-        src="flag.gif"
-        className="size-10 transform rotate-10" // Slight tilt
-        alt="Flag"
-      />
+    <div className='relative flex items-center gap-1'>
+    <a href="/" aria-label="Homepage">
+      <img src="/icon.png" className="w-[120px] md:w-[200px]" alt="Logo" />
+    <img
+    src="flag.gif"
+    className="size-16 opacity-55 transfor -rotate-3 absolute mix-blend-multiply -top-2 -left-1 w-full -z-10 transform rotate-10" // Slight tilt
+    alt="Flag"
+    />
     </a>
+    </div>
   );
 }
 

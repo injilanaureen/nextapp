@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="flex w-full mx-auto gap-x-96 items-center p-4 mb-10">
+        <header className="flex w-full mx-auto gap-x-96 items-center p-4 mt-1 mb-10">
            <Logo />
            <NavigationMenuDemo />
            <div className="flex gap-2 items-center mr-20">
