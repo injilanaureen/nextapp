@@ -1,12 +1,10 @@
-import { HeroParallaxDemo } from "@src/components/hero-parallex";
-import { CarouselDemo } from "@src/components/carousel";
+import { ImagesSliderDemo } from "@src/components/image-slider";
 
 
 export default function Page() {
   return (
     <div>
-      <CarouselDemo/>
-      {/* <HeroParallaxDemo/>    */}
+      <ImagesSliderDemo/>
     </div>
   );
 }

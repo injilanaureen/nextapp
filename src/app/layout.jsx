@@ -5,6 +5,7 @@ import Logo from "../components/Logo";
 import { NavbarDemo } from "@src/components/navbar";
 import {ButtonOutline} from "@src/components/buttonSimple";
 import { NavigationMenuDemo } from "@src/components/navigation-menu";
+import {SearchInput} from "@src/components/searchInput";
 
 
 
@@ -32,12 +33,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="flex w-full mx-auto gap-x-96 items-center p-4 mt-1 mb-10">
+        <header className="flex w-full mx-auto gap-x-96 items-center p-4 mt-1 mb-2">
            <Logo />
            <NavigationMenuDemo />
            <div className="flex gap-2 items-center mr-20">
              <Link href="/signup"><Button>Sign Up</Button></Link>
             <ButtonOutline href="/signup">Login</ButtonOutline>
+            <SearchInput/>
+
            </div>
         </header>
         <main>{children}</main>

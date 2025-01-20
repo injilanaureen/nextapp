@@ -8,13 +8,13 @@ const Button = ({ children, href }) => {
         '--text-light': 'rgba(255, 255, 255, 0.4)',
         '--back-color': '240, 40%',
       }}
-      className="relative inline-block px-7 py-1 my-2 text-md text-white rounded-lg uppercase bg-gradient-to-br from-[#00c6ff] to-[#0072ff] shadow-[0px_4px_0px_#0072ff] transition-all duration-200 ease-in-out cursor-pointer whitespace-nowrap"
+      className="relative inline-block px-7 py-1 my-2 text-md text-white rounded-md uppercase bg-blue-500 transition-all duration-200 ease-in-out cursor-pointer whitespace-nowrap"
     >
       {children}
 
       {/* Top-left and bottom-right borders */}
-      <span className="absolute top-[-3px] left-[-3px] w-0 h-0 border-t-3 border-l-3 border-white rounded-full"></span>
-      <span className="absolute bottom-[-3px] right-[-3px] w-0 h-0 border-b-3 border-r-3 border-white rounded-full"></span>
+      <span className="absolute top-[-3px] left-[-3px] w-0 h-0 border-t-3 border-l-3 border-white rounded-lg"></span>
+      <span className="absolute bottom-[-3px] right-[-3px] w-0 h-0 border-b-3 border-r-3 border-white rounded-lg"></span>
 
       {/* Hover and active states */}
       <style jsx>{`
