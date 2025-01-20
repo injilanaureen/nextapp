@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Logo from "../components/Logo";
 import { NavbarDemo } from "@src/components/navbar";
+import { NavigationMenuDemo } from "@src/components/navigation-menu";
+
 import Button from "@src/components/button"; // Your Button component
 
 const geistSans = Geist({
@@ -28,7 +30,7 @@ export default function RootLayout({ children }) {
       >
         <header className="flex items-center p-4 mb-10">
           <Logo />
-           <NavbarDemo />
+           <NavigationMenuDemo />
            <Button href="/signup">Sign Up</Button>
         </header>
         <main>{children}</main>
