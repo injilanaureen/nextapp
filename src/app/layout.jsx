@@ -1,8 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 import Logo from "../components/Logo";
 import { NavbarDemo } from "@src/components/navbar";
+import {ButtonOutline} from "@src/components/buttonSimple";
 import { NavigationMenuDemo } from "@src/components/navigation-menu";
+
+
 
 import Button from "@src/components/button"; // Your Button component
 
@@ -28,10 +32,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="flex items-center p-4 mb-10">
-          <Logo />
+        <header className="flex w-full mx-auto gap-x-96 items-center p-4 mb-10">
+           <Logo />
            <NavigationMenuDemo />
-           <Button href="/signup">Sign Up</Button>
+           <div className="flex gap-2 items-center mr-20">
+             <Link href="/signup"><Button>Sign Up</Button></Link>
+            <ButtonOutline href="/signup">Login</ButtonOutline>
+           </div>
         </header>
         <main>{children}</main>
         <footer>Copyright by The PeUnique</footer>

@@ -8,7 +8,7 @@ const Button = ({ children, href }) => {
         '--text-light': 'rgba(255, 255, 255, 0.4)',
         '--back-color': '240, 40%',
       }}
-      className="relative inline-block px-7 py-1 my-2 text-md text-white uppercase bg-gradient-to-br from-[#00c6ff] to-[#0072ff] shadow-[0px_4px_0px_#0072ff] transition-all duration-200 ease-in-out cursor-pointer whitespace-nowrap"
+      className="relative inline-block px-7 py-1 my-2 text-md text-white rounded-lg uppercase bg-gradient-to-br from-[#00c6ff] to-[#0072ff] shadow-[0px_4px_0px_#0072ff] transition-all duration-200 ease-in-out cursor-pointer whitespace-nowrap"
     >
       {children}
 

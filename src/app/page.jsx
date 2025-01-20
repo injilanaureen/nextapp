@@ -1,10 +1,12 @@
-import { BreadcrumbDemo } from "@src/components/breadcrumb";
-import Link from "next/link";
+import { HeroParallaxDemo } from "@src/components/hero-parallex";
+import { CarouselDemo } from "@src/components/carousel";
+
 
 export default function Page() {
   return (
     <div>
-      <BreadcrumbDemo/>   
+      <CarouselDemo/>
+      <HeroParallaxDemo/>   
     </div>
   );
 }
